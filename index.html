@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="src/style.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Weather API</h1>
+
+    <div id="city">Display City Here</div>
+    <div id="temperature">Display Temperature Here</div>
+    <div id="current-condition">Display Current Weather Conditions Here</div>
+    <div id="feels-like">Display Feels-Like Temperature Here</div>
+    <div id="sunrise">Display Sunrise Here</div>
+    <div id="sunset">Display Sunset Here</div>
+
+    <form id="search-form">
+      <input
+        type="text"
+        placeholder="Search for city"
+        autocomplete="off"
+        autofocus="on"
+        id="search-text-input"
+      />
+      <h2></h2>
+      <input type="submit" value="Search" id="search-button" />
+    </form>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
